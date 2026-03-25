@@ -52,7 +52,7 @@ function countVowels(str) {
   }
   return count;
 }
-console.log(countVowels("javascript"));
+// console.log(countVowels("javascript"));
 
 // 2.Input: [1,2,3,4]
 // Output: 10
@@ -71,4 +71,17 @@ function sumArry(arr) {
   }
   return sum;
 }
-console.log(sumArry([1, 2, 3, 4]));
+// console.log(sumArry([1, 2, 3, 4]));
+
+// input: madam
+// output :true
+
+function isPalindrome(str) {
+  const cleanStr = str.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+  const reversedStr = cleanStr.split("").reverse().join("");
+
+  return cleanStr === reversedStr;
+}
+
+console.log(isPalindrome("Madam"));
