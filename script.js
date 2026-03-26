@@ -84,4 +84,9 @@ function isPalindrome(str) {
   return cleanStr === reversedStr;
 }
 
-console.log(isPalindrome("Madam"));
+// console.log(isPalindrome("Madam"));
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+
+console.log(reverseString("hello"));
