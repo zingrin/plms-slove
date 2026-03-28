@@ -105,4 +105,14 @@ function findDuplicates(arr) {
   return [...duplicates];
 }
 
-console.log(findDuplicates([1, 2, 3, 2, 4, 5, 1]));
+// console.log(findDuplicates([1, 2, 3, 2, 4, 5, 1]));
+
+// Input: [10, 5, 20, 8, 20]
+// Output: 10
+function secondLargest(arr) {
+  const unique = [...new Set(arr)];
+  unique.sort((a, b) => b - a);
+  return unique[1];
+}
+
+console.log(secondLargest([10, 5, 20, 8, 20]));
