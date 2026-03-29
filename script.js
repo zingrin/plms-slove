@@ -134,4 +134,20 @@ function secondLargest(arr) {
   return second;
 }
 
-console.log(secondLargest([10, 5, 20, 8, 20]));
+// console.log(secondLargest([10, 5, 20, 8, 20]
+
+// event
+
+function evenSum(limit) {
+  let sum = 0;
+
+  for (let i = 2; i <= limit; i += 2) {
+    console.log(i);
+    sum += i;
+  }
+
+  return sum;
+}
+
+const result = evenSum(50);
+console.log("Final Sum:", result);
