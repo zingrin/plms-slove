@@ -165,4 +165,11 @@ for (let i = 1; i < numbers.length; i++) {
   }
 }
 
-console.log(secondLargest1);
+// console.log(secondLargest1);
+
+// Input: nums = [1,2,3,4]
+// Output: [24,12,8,6]
+const nums = [1, 2, 3, 4];
+const totalProduct = nums.reduce((acc, currentValue) => acc * currentValue, 1);
+const output = nums.map((num) => totalProduct / num);
+console.log(output);
