@@ -150,4 +150,19 @@ function evenSum(limit) {
 }
 
 const result = evenSum(50);
-console.log("Final Sum:", result);
+// console.log("Final Sum:", result);
+const numbers1 = [10, 5, 8, 20, 15];
+
+let largest = numbers1[0];
+let secondLargest1 = -Infinity;
+
+for (let i = 1; i < numbers.length; i++) {
+  if (numbers1[i] > largest) {
+    secondLargest1 = largest;
+    largest = numbers1[i];
+  } else if (numbers1[i] > secondLargest && numbers1[i] !== largest) {
+    secondLargest1 = numbers1[i];
+  }
+}
+
+console.log(secondLargest1);
