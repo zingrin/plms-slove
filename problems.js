@@ -43,4 +43,21 @@ function tSum(nums1, tr) {
     map[nums1[index]] = index;
   }
 }
-console.log(tSum([10, 5, 8, 20, 15], 25));
+// console.log(tSum([10, 5, 8, 20, 15], 25));
+
+// const nums2 = [77,99,88,67,30,53];
+
+// const target1 = 120;
+
+function sumT3(nums2, target2) {
+  const map = {};
+  for (let index = 0; index < nums2.length; index++) {
+    const element = target2 - nums2[index];
+    if (map[element] !== undefined) {
+      return [map[element], index];
+    }
+    map[nums2[index]] = index;
+  }
+}
+
+console.log(sumT3([77, 99, 88, 67, 30, 53], 120));
