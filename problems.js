@@ -60,4 +60,27 @@ function sumT3(nums2, target2) {
   }
 }
 
-console.log(sumT3([77, 99, 88, 67, 30, 53], 120));
+// console.log(sumT3([77, 99, 88, 67, 30, 53], 120));
+
+// solting
+function twoSum4(nums4, target4) {
+  let arr = nums4.map((num, i) => [num, i]); // value + index store
+  arr.sort((a, b) => a[0] - b[0]);
+
+  let left = 0;
+  let right = arr.length - 1;
+
+  while (left < right) {
+    let sum = arr[left][0] + arr[right][0];
+
+    if (sum === target4) {
+      return [arr[left][1], arr[right][1]];
+    } else if (sum < target4) {
+      left++;
+    } else {
+      right--;
+    }
+  }
+}
+
+console.log(twoSum4([2, 7, 11, 15], 9));
