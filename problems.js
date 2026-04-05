@@ -84,3 +84,14 @@ function twoSum4(nums4, target4) {
 }
 
 console.log(twoSum4([2, 7, 11, 15], 9));
+function reverseArray(arr) {
+  let result = [];
+
+  for (let i = arr.length - 1; i >= 0; i--) {
+    result.push(arr[i]);
+  }
+
+  return result;
+}
+
+console.log(reverseArray([1, 2, 3, 4]));
