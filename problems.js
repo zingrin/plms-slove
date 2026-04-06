@@ -83,7 +83,8 @@ function twoSum4(nums4, target4) {
   }
 }
 
-console.log(twoSum4([2, 7, 11, 15], 9));
+// console.log(twoSum4([2, 7, 11, 15], 9));
+
 function reverseArray(arr) {
   let result = [];
 
@@ -94,4 +95,23 @@ function reverseArray(arr) {
   return result;
 }
 
-console.log(reverseArray([1, 2, 3, 4]));
+// console.log(reverseArray([1, 2, 3, 4]));
+function firstUniqueChar(str) {
+  const map = {};
+
+  // Step 1: count সব character
+  for (let char of str) {
+    map[char] = (map[char] || 0) + 1;
+  }
+
+  // Step 2: প্রথম non-repeating খুঁজো
+  for (let char of str) {
+    if (map[char] === 1) {
+      return char;
+    }
+  }
+
+  return null;
+}
+
+console.log(firstUniqueChar("programming"));
