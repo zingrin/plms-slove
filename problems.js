@@ -99,12 +99,10 @@ function reverseArray(arr) {
 function firstUniqueChar(str) {
   const map = {};
 
-  // Step 1: count সব character
   for (let char of str) {
     map[char] = (map[char] || 0) + 1;
   }
 
-  // Step 2: প্রথম non-repeating খুঁজো
   for (let char of str) {
     if (map[char] === 1) {
       return char;
