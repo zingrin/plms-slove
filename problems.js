@@ -130,3 +130,10 @@ function secondLargest(arr) {
 }
 
 console.log(secondLargest([10, 5, 20, 8])); // 10
+
+
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+
+console.log(reverseString("hello")); // olleh
