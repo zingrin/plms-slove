@@ -131,9 +131,16 @@ function secondLargest(arr) {
 
 console.log(secondLargest([10, 5, 20, 8])); // 10
 
-
 function reverseString(str) {
   return str.split("").reverse().join("");
 }
 
 console.log(reverseString("hello")); // olleh
+
+function secondLargest(arr) {
+  let unique = [...new Set(arr)];
+  unique.sort((a, b) => b - a);
+  return unique[1];
+}
+
+console.log(secondLargest([10, 5, 8, 20, 20])); // 10
