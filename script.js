@@ -197,3 +197,9 @@ function isAnagram(str1, str2) {
 }
 
 console.log(isAnagram("listen", "silent")); // true
+
+function isPalindrome(str) {
+  return str === str.split("").reverse().join("");
+}
+
+console.log(isPalindrome("madam")); // true
