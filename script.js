@@ -174,7 +174,7 @@ const totalProduct = nums.reduce((acc, currentValue) => acc * currentValue, 1);
 const output = nums.map((num) => totalProduct / num);
 console.log(output);
 const a = [1, 2];
-const b = [3, 4];
+const b = [5, 6];
 
 const merged = [...a, ...b];
 
